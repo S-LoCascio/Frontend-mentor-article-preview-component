@@ -23,17 +23,22 @@ body {
 }
 
 .card {
-  margin: 15%;
+  margin: 10%;
+  width: 700px;
+  height: 280px;
   display: flex;
   background-color: white;
   border-radius: 2vh;
 
   .card-img {
     flex: 1 1 40%;
+
     img {
-      width: 100%;
       height: 100%;
+      max-width: 100%;
       border-radius: 2vh 0 0 2vh;
+      object-fit: cover;
+      object-position: 0% -50%;
     }
   }
 
@@ -41,14 +46,60 @@ body {
     padding: 5%;
     flex: 1 1 60%;
 
-    h1 {
+    h2 {
       color: $veryDarkBlue;
-      font-weight: 700;
     }
 
     .card-text-p {
       color: $Grayishblue;
-      margin-top: 2%;
+      margin-top: 3%;
+    }
+
+    .card-text-quote-box {
+      margin-top: 5%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      .card-text-quote-picture img {
+        border-radius: 50%;
+        height: 50px;
+        width: auto;
+        flex: 1 1 10%;
+      }
+
+      .card-text-quote {
+        margin-left: 3%;
+        flex: 1 1 85%;
+
+        .card-text-quote-name {
+          font-weight: bold;
+          color: $veryDarkBlue;
+        }
+
+        .card-text-quote-date {
+          margin-top: 3%;
+          color: $Grayishblue;
+        }
+      }
+
+      .card-text-quote-share {
+        background-color: $lightGrayBlue;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        flex: 1 1 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card-text-quote-share {
+          height: 40px;
+          width: 40px;
+          object-fit: fill;
+        }
+      }
     }
   }
 }
