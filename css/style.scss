@@ -24,6 +24,17 @@ body {
   min-height: 100vh;
 }
 
+.hide {
+  display: none !important;
+}
+
+.btn {
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
 .card {
   margin: 10%;
   width: 700px;
@@ -101,6 +112,21 @@ body {
           height: 40px;
           width: 40px;
           object-fit: fill;
+        }
+      }
+
+      .clicked {
+        background-color: $veryDarkBlue;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        flex: 1 1 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          color: #ecf2f8;
         }
       }
 

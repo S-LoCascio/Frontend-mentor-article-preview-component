@@ -52,9 +52,11 @@
             <div class="card-text-quote-date">28 Jun 2020</div>
           </div>
           <div class="card-text-quote-share">
-            <img src="images/icon-share.svg" alt="share-arrow" />
+            <button class="btn" id="shareButton" onClick="hideElement()">
+              <img src="images/icon-share.svg" alt="share-arrow" />
+            </button>
           </div>
-          <div class="share-box" id="shareBox">
+          <div class="share-box hide" id="shareBox">
             <p>share</p>
             <img src="images/icon-facebook.svg" alt="Facebook" />
             <img src="images/icon-twitter.svg" alt="twitter" />
@@ -70,5 +72,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Salvatore LoCascio</a>.
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
