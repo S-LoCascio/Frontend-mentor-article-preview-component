@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+html {
+  height: 100%;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -11,11 +15,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
   font-size: 13px;
   font-weight: 500;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .hide {
@@ -144,6 +148,100 @@ body {
 }
 .card .attribution {
   background-color: hsl(217, 19%, 35%);
-  position: absolute;
   margin-top: auto;
+}
+
+/* Media Query and reponsiveness */
+@media (max-width: 500px) {
+  .body {
+    display: flex;
+  }
+  .card {
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+    margin: 5% 5% 3% 5%;
+  }
+  .card .card-img {
+    flex: 1 1 30%;
+  }
+  .card .card-img img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 2vh 2vh 0 0;
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: 0% -50%;
+       object-position: 0% -50%;
+  }
+  .card .card-text {
+    padding: 10% 10% 5% 0%;
+    flex: 1 1 70%;
+  }
+  .card .card-text h2 {
+    margin-left: 10%;
+  }
+  .card .card-text .card-text-p {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    color: hsl(217, 19%, 35%);
+  }
+  .card .card-text .card-text-quote-box {
+    /* margin-left: 10%; */
+  }
+  .card .card-text .card-text-quote-box .card-text-quote-picture {
+    margin-left: 10%;
+  }
+  .card .card-text .card-text-quote-box .card-text-quote {
+    margin-left: 3%;
+    flex: 1 1 85%;
+  }
+  .card .card-text .card-text-quote-box .card-text-quote .card-text-quote-name {
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+  }
+  .card .card-text .card-text-quote-box .card-text-quote .card-text-quote-date {
+    margin-top: 3%;
+    color: hsl(212, 23%, 69%);
+  }
+  .card .card-text .card-text-quote-box .card-text-quote-share {
+    background-color: hsl(210, 46%, 95%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    flex: 1 1 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .card-text .card-text-quote-box .card-text-quote-share .card-text-quote-share {
+    height: 40px;
+    width: 40px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .card .card-text .card-text-quote-box .clicked {
+    background-color: hsl(217, 19%, 35%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    flex: 1 1 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .card-text .card-text-quote-box .clicked img {
+    color: #ecf2f8;
+  }
+  .card .card-text .card-text-quote-box .share-box {
+    position: absolute;
+    align-items: center;
+    border-radius: 0 0 2vh 2vh;
+    margin: 0;
+    left: 0px;
+    top: 0;
+    width: 111%;
+    height: 130%;
+  }
 }
