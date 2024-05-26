@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   position: relative;
   font-size: 13px;
   font-weight: 500;
@@ -50,9 +50,9 @@ body {
   max-width: 100%;
   border-radius: 2vh 0 0 2vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 0% -50%;
-     object-position: 0% -50%;
+  object-position: 0% -50%;
 }
 .card .card-text {
   padding: 5%;
@@ -101,11 +101,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card .card-text .card-text-quote-box .card-text-quote-share .card-text-quote-share {
+.card
+  .card-text
+  .card-text-quote-box
+  .card-text-quote-share
+  .card-text-quote-share {
   height: 40px;
   width: 40px;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 .card .card-text .card-text-quote-box .clicked {
   background-color: hsl(217, 19%, 35%);
@@ -170,9 +174,9 @@ body {
     max-width: 100%;
     border-radius: 2vh 2vh 0 0;
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     -o-object-position: 0% -50%;
-       object-position: 0% -50%;
+    object-position: 0% -50%;
   }
   .card .card-text {
     padding: 10% 10% 5% 0%;
@@ -215,11 +219,15 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .card .card-text .card-text-quote-box .card-text-quote-share .card-text-quote-share {
+  .card
+    .card-text
+    .card-text-quote-box
+    .card-text-quote-share
+    .card-text-quote-share {
     height: 40px;
     width: 40px;
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
   }
   .card .card-text .card-text-quote-box .clicked {
     background-color: hsl(217, 19%, 35%);
